@@ -1,4 +1,4 @@
-﻿using Ru_text_spam_detector_ml_net;
+﻿using SandBox.Advanced.MachineLearn;
 
 namespace ru_text_spam_detector_ml.net;
 
@@ -7,13 +7,13 @@ public class SpamRecognition
     public float Recognize(string? message)
     {
         //Load sample data
-        var sampleData = new RuSpamMl.ModelInput
+        var sampleData = new AntiWorkSpam.ModelInput
         {
-            Message = message ?? string.Empty
+            Value = message ?? string.Empty,
         };
         
         //Load model and predict output
-        return RuSpamMl.Predict(sampleData).Score.Last();
+        return AntiWorkSpam.Predict(sampleData).Score.Last();
     }
 }
 
