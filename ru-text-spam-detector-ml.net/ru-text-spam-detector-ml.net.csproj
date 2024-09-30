@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>ru_text_spam_detector_ml.net</RootNamespace>
@@ -8,9 +7,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>TheCrazyWolf</Authors>
   </PropertyGroup>
-
   <ItemGroup>
-    <Folder Include="MachineLearn\" />
+    <PackageReference Include="Microsoft.ML" Version="3.0.1" />
   </ItemGroup>
-
+  <ItemGroup Label="RuSpamMl">
+    <None Include="RuSpamMl.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
