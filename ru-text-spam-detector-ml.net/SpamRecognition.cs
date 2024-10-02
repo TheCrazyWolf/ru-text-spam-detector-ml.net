@@ -1,4 +1,4 @@
-﻿using SandBox.Advanced.MachineLearn;
+﻿using ru_text_spam_detector_ml.net.MachineLearn;
 
 namespace ru_text_spam_detector_ml.net;
 
