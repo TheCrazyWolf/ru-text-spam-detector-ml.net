@@ -11,12 +11,8 @@
     <PackageReference Include="Microsoft.ML" Version="3.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="MachineLearn\AntiWorkSpam.mlnet" />
-    <Resource Include="AntiWorkSpam.mlnet">
+    <AdditionalFiles Include="AntiWorkSpam.mlnet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="MachineLearn\AntiWorkSpam.mlnet">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </AdditionalFiles>
   </ItemGroup>
 </Project>
